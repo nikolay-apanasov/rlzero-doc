@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Nikolay Apanasov">
+<meta name="dcterms.date" content="2025-04-08">
 
-<title>papers – RLZero</title>
+<title>papers – RLZero Documentation</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +25,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-8bba4cedf4f4668489beb794e8eb8f2a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-4379b0ccadffce622b03caf4c46266b3.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-97bb8e35cfbb9ca2cff3822d1a0fe91c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-8759fa76092796ce2b6ab70411517d72.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -66,22 +70,30 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>
+
+      .quarto-title-block .quarto-title-banner {
+        background: #e9f3fa;
+      }
+</style>
 
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles/styles.css">
+<meta name="citation_author" content="Nikolay Apanasov">
+<meta name="citation_publication_date" content="2025-04-08">
+<meta name="citation_cover_date" content="2025-04-08">
+<meta name="citation_year" content="2025">
+<meta name="citation_online_date" content="2025-04-08">
+<meta name="citation_fulltext_html_url" content="https://nikolay-apanasov.github.io/rlzero-doc/content/papers/papers.html">
+<meta name="citation_language" content="en">
 </head>
 
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">RLZero</span>
-    </a>
-  </div>
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
@@ -89,18 +101,99 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-introduction" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Introduction</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-introduction">    
+        <li>
+    <a class="dropdown-item" href="../../content/intro/intro.html">
+ <span class="dropdown-text">Introduction to RLZero</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../content/intro/design.html">
+ <span class="dropdown-text">System Design with RLZero</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../content/intro/install.html">
+ <span class="dropdown-text">Installation of RLZero</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-external-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">External Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-external-resources">    
+        <li>
+    <a class="dropdown-item" href="../../content/external/resources.html">
+ <span class="dropdown-text">External Resources</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-api-reference" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">API Reference</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-api-reference">    
+        <li>
+    <a class="dropdown-item" href="../../content/reference/reference.html">
+ <span class="dropdown-text">RLZero - API Reference</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <span class="nav-link">
+<span class="menu-text">sidebar:papers</span>
+    </span>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://github.com/nikolay-apanasov/rlzero-doc" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Nikolay Apanasov </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">2025-04-08</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -108,24 +201,46 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#prototyping-research-systems---lab-assignments" id="toc-prototyping-research-systems---lab-assignments" class="nav-link active" data-scroll-target="#prototyping-research-systems---lab-assignments">Prototyping Research Systems - Lab Assignments</a>
+  <li><a href="#prototyping-research-systems---lab-assignments" id="toc-prototyping-research-systems---lab-assignments" class="nav-link active" data-scroll-target="#prototyping-research-systems---lab-assignments"><span class="header-section-number">1</span> Prototyping Research Systems - Lab Assignments</a>
   <ul class="collapse">
-  <li><a href="#solutions-reference-implementations" id="toc-solutions-reference-implementations" class="nav-link" data-scroll-target="#solutions-reference-implementations">Solutions (Reference Implementations)</a></li>
+  <li><a href="#solutions-reference-implementations" id="toc-solutions-reference-implementations" class="nav-link" data-scroll-target="#solutions-reference-implementations"><span class="header-section-number">1.1</span> Solutions (Reference Implementations)</a></li>
   </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<section id="prototyping-research-systems---lab-assignments" class="level1">
-<h1>Prototyping Research Systems - Lab Assignments</h1>
-<p>RLZero grew out of the lab-component for an imaginary graduate-level course <em>7.824 Deep Reinforcement Learning Systems</em>. The purpose of this course is to help graduate students acquire a fundamental understanding of the theoretical foundations of Reinforcement Learning, and to help them get up to speed with the state-of-the-art in RL research. 7.824 provides the student with a strong foundation for both applying Reinforcement Learning to complex problems, and for addressing core research topics in Reinforcement Learning. After creating this content, it became obvious that RLZero and the 7.824 labs could be very useful resource for the community. Therefore we have made this library and the 7.824 labs public, in the hope that other researchers can benefit from our efforts.</p>
-<p>Much of the class consists of studying and discussing case studies of RL systems. The labs for 7.824 are a fundamental part of the curriculum, where students implement prototypes of state-of-the-art RL systems, as described in research publications. To this end, we present abstractions and implementation techniques for engineering distributed RL systems, using the RLZero framework to illustrate these principles.</p>
-<p>RLZero is a library of building blocks for Reinforcement Learning, which enables prototyping RL research papers quickly and effectively. It is mostly based on the <a href="https://github.com/google-deepmind/acme">Acme framework of DeepMind</a>, however it is not a library of RL algorithms. Similar to the <a href="https://spinningup.openai.com/">Spinning Up</a>) library by Josh Achiam at OpenAI, RLZero is an educational resource for Reinforcement Learning. RLZero offers a small and lightweight set of thoughtfully chosen abstractions that makes it simple and intuitive for engineers to create <em>modular</em> distributed RL systems consisting of components that are <em>flexible</em>, <em>reusable</em> and <em>fault-tolerant</em>. Students use the RLZero framework to implement a series of RL systems of increasing complexity, starting from <a href="https://arxiv.org/abs/1710.10044">QR-DQN</a> and <a href="https://arxiv.org/abs/1507.04296">Distributed (Gorila) DQN</a>, moving up to more recent distributed systems such as <a href="https://arxiv.org/abs/1804.08617">D4PG</a>, <a href="https://openreview.net/forum?id=r1lyTjAqYX">R2D2</a>, <a href="https://arxiv.org/abs/1802.01561">Impala</a>, and finally <a href="https://arxiv.org/pdf/1911.08265">MuZero</a>. The course culminates in a research project, where students</p>
+<p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+# TODO <a href="#" onclick="this.href = location.href.replace('/en/', '/');" class="button-cta">
+# <button class="btn"><i class="fa fa-language"></i> Passer à la version française 🇫🇷</button>
+#</a></p>
+<section id="prototyping-research-systems---lab-assignments" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Prototyping Research Systems - Lab Assignments</h1>
+<p>RLZero grew out of the lab-component for an imaginary graduate-level course <em>7.824 Deep Reinforcement Learning Systems</em>.
+The purpose of this course is to help graduate students acquire a fundamental understanding of the theoretical foundations of Reinforcement Learning,
+and to help them get up to speed with the state-of-the-art in RL research.
+7.824 provides the student with a strong foundation for both applying Reinforcement Learning to complex problems,
+and for addressing core research topics in Reinforcement Learning.
+After creating this content, it became obvious that RLZero and the 7.824 labs could be very useful resource for the community.
+Therefore we have made this library and the 7.824 labs public, in the hope that other researchers can benefit from our efforts.</p>
+<p>Much of the class consists of studying and discussing case studies of RL systems.
+The labs for 7.824 are a fundamental part of the curriculum,
+where students implement prototypes of state-of-the-art RL systems, as described in research publications.
+To this end, we present abstractions and implementation techniques for engineering distributed RL systems,
+using the RLZero framework to illustrate these principles.</p>
+<p>RLZero is a library of building blocks for Reinforcement Learning, which enables prototyping RL research papers quickly and effectively.
+It is mostly based on the <a href="https://github.com/google-deepmind/acme">Acme framework of DeepMind</a>, however it is not a library of RL algorithms.
+Similar to the <a href="https://spinningup.openai.com/">Spinning Up</a> library by Josh Achiam at OpenAI, RLZero is an educational resource for Reinforcement Learning.
+RLZero offers a small and lightweight set of thoughtfully chosen abstractions that makes it simple and intuitive for engineers
+to create <em>modular</em> distributed RL systems consisting of components that are <em>flexible</em>, <em>reusable</em> and <em>fault-tolerant</em>.
+Students use the RLZero framework to implement a series of RL systems of increasing complexity,
+starting from <a href="https://arxiv.org/abs/1710.10044">QR-DQN</a> and <a href="https://arxiv.org/abs/1507.04296">Distributed (Gorila) DQN</a>,
+moving up to more recent distributed systems such as <a href="https://arxiv.org/abs/1804.08617">D4PG</a>, <a href="https://openreview.net/forum?id=r1lyTjAqYX">R2D2</a>, <a href="https://arxiv.org/abs/1802.01561">Impala</a>, and finally <a href="https://arxiv.org/pdf/1911.08265">MuZero</a>.
+The course culminates in a research project, where students</p>
 <ul>
 <li>create a novel distributed RL algorithm</li>
 <li>implement their system in RLZero</li>
@@ -159,15 +274,23 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<section id="solutions-reference-implementations" class="level2">
-<h2 class="anchored" data-anchor-id="solutions-reference-implementations">Solutions (Reference Implementations)</h2>
-<p>Besides providing students with a template and a detailed specification for each lab/paper, each paper is accompanied with all of the logging output of our reference solution, which is a useful baseline for students while they are debugging their own implementation. After the submission deadline, we provide students with our source code to enhance the learning process. Our implementations are reasonably good, although certainly not industrial grade. We strived to make them as simple as possible, and we tried to stay close to the pseudocode from the paper, all to make it simple for the student to study our implementation. All of these implementations are freely available in a private companion repository <a href="">RLZero-Solutions</a>. If you are an instructor, feel free to reach out to us, and we will gladly make our reference solutions available to you.</p>
+<section id="solutions-reference-implementations" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="solutions-reference-implementations"><span class="header-section-number">1.1</span> Solutions (Reference Implementations)</h2>
+<p>Besides providing students with a template and a detailed specification for each lab/paper,
+each paper is accompanied with all of the logging output of our reference solution,
+which is a useful baseline for students while they are debugging their own implementation.
+After the submission deadline, we provide students with our source code to enhance the learning process.
+Our implementations are reasonably good, although certainly not industrial grade.
+We strived to make them as simple as possible, and we tried to stay close to the pseudocode from the paper,
+all to make it simple for the student to study our implementation.
+All of these implementations are freely available in a private companion repository <a href="">RLZero-Solutions</a>.
+If you are an instructor, feel free to reach out to us, and we will gladly make our reference solutions available to you.</p>
 
 
 </section>
 </section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -188,6 +311,150 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -586,6 +853,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>RLZero, A Teaching Framework for Distributed Reinforcement Learning.<br>
+License {{&lt; fa brands creative-commons &gt;}}<br>
+Code source <a href="https://github.com/nikolay-apanasov/rlzero-doc"><code>Github</code></a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Site Constructed With {{&lt; fa brands python &gt;}} and <a href="https://quarto.org/"><code>Quarto</code></a><br>
+Design Inspired by <a href="https://pythonds.linogaliana.fr/en/">ici</a><br>
+<a href="https://github.com/nikolay-apanasov/rlzero-doc">Source code available on {{&lt; fa brands github &gt;}} <code>GitHub</code></a></p>
+</div>
+  </div>
+</footer>
 
 
 

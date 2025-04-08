@@ -1,72 +1,130 @@
 [
   {
-    "objectID": "start/install.html",
-    "href": "start/install.html",
-    "title": "Installation of RLZero",
-    "section": "",
-    "text": "Installation of RLZero"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "RLZero Documentation",
-    "section": "",
-    "text": "RLZero is a library of building blocks for Reinforcement Learning, which enables prototyping RL research papers from scratch, quickly and effectively. It is designed to facilitate rapid and efficient scaling of research prototypes into robust distributed architectures. That is, RLZero makes it easy to create modular distributed RL systems consisting of components that are flexible, reusable and fault-tolerant. The framework provides a set of fundamental RL abstractions that make it simple to quickly get the design of a new system architecture just right.\nRLZero is mostly based on the Acme framework of DeepMind, however it is not a library of RL algorithms. It is the outgrowth of the lab-component for a graduate-level course 7.824 Deep Reinforcement Learning Systems. Similar to the Spinning Up library by Josh Achiam at OpenAI, RLZero began as an educational resource for Reinforcement Learning. We offer a small and lightweight set of thoughtfully chosen abstractions that makes it simple and intuitive for students and engineers to create modular distributed RL systems. While the overall framework is decoupled from the choice of \n\nRL simulation environment (Gymnasium, Mujoco, PettingZoo, …)\nDeep Learning framework (PyTorch, JAX, TensorFlow, …)\nDistributed-computation framework (Ray, Spark, Hadooop, …)\nCloud infrastructure (GCP, AWS, …)\nExperiment-Logging/MLOps platform (WandDB, Tensorboard, MLFlow, …)\nStorage system for experience replay buffers (Reverb, Redis, …)\n\nRLZero provides concrete implementations of all of these abstract components, using industry-standard tools, making it simple to get started in RL research today.\n\n\n\ninstall\n\n\n\n\nstart\n\n\n\n\ndesign\n\n\n\n\npapers"
-  },
-  {
     "objectID": "index.html#install-rlzero",
     "href": "index.html#install-rlzero",
-    "title": "RLZero Documentation",
-    "section": "",
-    "text": "install"
+    "title": "RLZero",
+    "section": "0.1 Install RLZero",
+    "text": "0.1 Install RLZero\n\nInstall"
   },
   {
-    "objectID": "index.html#get-started",
-    "href": "index.html#get-started",
-    "title": "RLZero Documentation",
-    "section": "",
-    "text": "start"
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "RLZero",
+    "section": "0.2 Introduction",
+    "text": "0.2 Introduction\n\nIntroduction"
   },
   {
     "objectID": "index.html#system-design",
     "href": "index.html#system-design",
-    "title": "RLZero Documentation",
-    "section": "",
-    "text": "design"
+    "title": "RLZero",
+    "section": "0.3 System Design",
+    "text": "0.3 System Design\n\nDesign"
   },
   {
-    "objectID": "index.html#learning-white-paper-implementations",
-    "href": "index.html#learning-white-paper-implementations",
-    "title": "RLZero Documentation",
-    "section": "",
-    "text": "papers"
+    "objectID": "index.html#lab-assignments-white-paper-implementations",
+    "href": "index.html#lab-assignments-white-paper-implementations",
+    "title": "RLZero",
+    "section": "0.4 Lab Assignments (White Paper Implementations)",
+    "text": "0.4 Lab Assignments (White Paper Implementations)\n\nLab Assignments"
   },
   {
-    "objectID": "external/resources.html",
-    "href": "external/resources.html",
-    "title": "External Resources",
+    "objectID": "content/external/resources.html",
+    "href": "content/external/resources.html",
+    "title": "1 External Resources",
     "section": "",
-    "text": "External Resources"
+    "text": "1 External Resources\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "External Resources"
+    ]
   },
   {
-    "objectID": "papers/papers.html",
-    "href": "papers/papers.html",
-    "title": "Prototyping Research Systems - Lab Assignments",
+    "objectID": "content/intro/design.html",
+    "href": "content/intro/design.html",
+    "title": "1 System Design with RLZero",
     "section": "",
-    "text": "RLZero grew out of the lab-component for an imaginary graduate-level course 7.824 Deep Reinforcement Learning Systems. The purpose of this course is to help graduate students acquire a fundamental understanding of the theoretical foundations of Reinforcement Learning, and to help them get up to speed with the state-of-the-art in RL research. 7.824 provides the student with a strong foundation for both applying Reinforcement Learning to complex problems, and for addressing core research topics in Reinforcement Learning. After creating this content, it became obvious that RLZero and the 7.824 labs could be very useful resource for the community. Therefore we have made this library and the 7.824 labs public, in the hope that other researchers can benefit from our efforts.\nMuch of the class consists of studying and discussing case studies of RL systems. The labs for 7.824 are a fundamental part of the curriculum, where students implement prototypes of state-of-the-art RL systems, as described in research publications. To this end, we present abstractions and implementation techniques for engineering distributed RL systems, using the RLZero framework to illustrate these principles.\nRLZero is a library of building blocks for Reinforcement Learning, which enables prototyping RL research papers quickly and effectively. It is mostly based on the Acme framework of DeepMind, however it is not a library of RL algorithms. Similar to the Spinning Up) library by Josh Achiam at OpenAI, RLZero is an educational resource for Reinforcement Learning. RLZero offers a small and lightweight set of thoughtfully chosen abstractions that makes it simple and intuitive for engineers to create modular distributed RL systems consisting of components that are flexible, reusable and fault-tolerant. Students use the RLZero framework to implement a series of RL systems of increasing complexity, starting from QR-DQN and Distributed (Gorila) DQN, moving up to more recent distributed systems such as D4PG, R2D2, Impala, and finally MuZero. The course culminates in a research project, where students\n\ncreate a novel distributed RL algorithm\nimplement their system in RLZero\ncompare their algorithm’s performance against suitable baselines\nproduce an 8-page report describing their work\n\nThe project is an integral part of this class, and is designed to be similar to researching and writing a conference-style paper.\n\n\n\nStructure\n\n\n\n\n\n\n\n\n\n\n\n\n\nLabs/Papers\n\n\n\n\n\n\n\n\n\n\nBesides providing students with a template and a detailed specification for each lab/paper, each paper is accompanied with all of the logging output of our reference solution, which is a useful baseline for students while they are debugging their own implementation. After the submission deadline, we provide students with our source code to enhance the learning process. Our implementations are reasonably good, although certainly not industrial grade. We strived to make them as simple as possible, and we tried to stay close to the pseudocode from the paper, all to make it simple for the student to study our implementation. All of these implementations are freely available in a private companion repository RLZero-Solutions. If you are an instructor, feel free to reach out to us, and we will gladly make our reference solutions available to you."
+    "text": "1 System Design with RLZero\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "System Design with RLZero"
+    ]
   },
   {
-    "objectID": "papers/papers.html#solutions-reference-implementations",
-    "href": "papers/papers.html#solutions-reference-implementations",
-    "title": "Prototyping Research Systems - Lab Assignments",
-    "section": "",
-    "text": "Besides providing students with a template and a detailed specification for each lab/paper, each paper is accompanied with all of the logging output of our reference solution, which is a useful baseline for students while they are debugging their own implementation. After the submission deadline, we provide students with our source code to enhance the learning process. Our implementations are reasonably good, although certainly not industrial grade. We strived to make them as simple as possible, and we tried to stay close to the pseudocode from the paper, all to make it simple for the student to study our implementation. All of these implementations are freely available in a private companion repository RLZero-Solutions. If you are an instructor, feel free to reach out to us, and we will gladly make our reference solutions available to you."
+    "objectID": "content/intro/intro.html#system-design",
+    "href": "content/intro/intro.html#system-design",
+    "title": "1 Introduction to RLZero",
+    "section": "1.1 System Design",
+    "text": "1.1 System Design",
+    "crumbs": [
+      "Introduction to RLZero"
+    ]
   },
   {
-    "objectID": "start/design.html",
-    "href": "start/design.html",
-    "title": "System Design with RLZero",
+    "objectID": "content/intro/intro.html#running-experiments",
+    "href": "content/intro/intro.html#running-experiments",
+    "title": "1 Introduction to RLZero",
+    "section": "1.2 Running Experiments",
+    "text": "1.2 Running Experiments",
+    "crumbs": [
+      "Introduction to RLZero"
+    ]
+  },
+  {
+    "objectID": "content/intro/intro.html#experiment-logging-mlops",
+    "href": "content/intro/intro.html#experiment-logging-mlops",
+    "title": "1 Introduction to RLZero",
+    "section": "1.3 Experiment Logging, MLOps",
+    "text": "1.3 Experiment Logging, MLOps",
+    "crumbs": [
+      "Introduction to RLZero"
+    ]
+  },
+  {
+    "objectID": "content/intro/intro.html#qr-dqn",
+    "href": "content/intro/intro.html#qr-dqn",
+    "title": "1 Introduction to RLZero",
+    "section": "1.4 QR-DQN",
+    "text": "1.4 QR-DQN",
+    "crumbs": [
+      "Introduction to RLZero"
+    ]
+  },
+  {
+    "objectID": "content/intro/intro.html#distributed-qr-dqn-gorila",
+    "href": "content/intro/intro.html#distributed-qr-dqn-gorila",
+    "title": "1 Introduction to RLZero",
+    "section": "1.5 Distributed QR-DQN (Gorila)",
+    "text": "1.5 Distributed QR-DQN (Gorila)",
+    "crumbs": [
+      "Introduction to RLZero"
+    ]
+  },
+  {
+    "objectID": "content/intro/install.html",
+    "href": "content/intro/install.html",
+    "title": "1 Installation of RLZero",
     "section": "",
-    "text": "System Design with RLZero"
+    "text": "1 Installation of RLZero\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Installation of RLZero"
+    ]
+  },
+  {
+    "objectID": "content/reference/reference.html",
+    "href": "content/reference/reference.html",
+    "title": "1 API Reference for RLZero",
+    "section": "",
+    "text": "1 API Reference for RLZero\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "API Reference for RLZero"
+    ]
+  },
+  {
+    "objectID": "content/lab/lab.html#solutions-reference-implementations",
+    "href": "content/lab/lab.html#solutions-reference-implementations",
+    "title": "1 Lab Assignments - White Paper Implementations",
+    "section": "1.1 Solutions (Reference Implementations)",
+    "text": "1.1 Solutions (Reference Implementations)\nBesides providing students with a template and a detailed specification for each lab/paper,\neach paper is accompanied with all of the logging output of our reference solution,\nwhich is a useful baseline for students while they are debugging their own implementation.\nAfter the submission deadline, we provide students with our source code to enhance the learning process.\nOur implementations are reasonably good, although certainly not industrial grade.\nWe strived to make them as simple as possible, and we tried to stay close to the pseudocode from the paper,\nall to make it simple for the student to study our implementation.\nAll of these implementations are freely available in a private companion repository RLZero-Solutions.\nIf you are an instructor, feel free to reach out to us, and we will gladly make our reference solutions available to you.",
+    "crumbs": [
+      "Lab Assignments - White Paper Implementations"
+    ]
   }
 ]

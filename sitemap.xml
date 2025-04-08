@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://nikolay-apanasov.github.io/rlzero-doc/cloud/cloud.html</loc>
-    <lastmod>2025-04-08T12:14:41.337Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nikolay-apanasov.github.io/rlzero-doc/start/install.html</loc>
-    <lastmod>2025-04-08T12:14:41.337Z</lastmod>
-  </url>
-  <url>
     <loc>https://nikolay-apanasov.github.io/rlzero-doc/index.html</loc>
+    <lastmod>2025-04-08T23:24:27.552Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nikolay-apanasov.github.io/rlzero-doc/content/external/resources.html</loc>
     <lastmod>2025-04-08T12:14:41.337Z</lastmod>
   </url>
   <url>
-    <loc>https://nikolay-apanasov.github.io/rlzero-doc/external/resources.html</loc>
+    <loc>https://nikolay-apanasov.github.io/rlzero-doc/content/intro/design.html</loc>
+    <lastmod>2025-04-08T22:28:42.223Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nikolay-apanasov.github.io/rlzero-doc/content/intro/intro.html</loc>
+    <lastmod>2025-04-08T22:28:44.431Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nikolay-apanasov.github.io/rlzero-doc/content/intro/install.html</loc>
     <lastmod>2025-04-08T12:14:41.337Z</lastmod>
   </url>
   <url>
-    <loc>https://nikolay-apanasov.github.io/rlzero-doc/papers/papers.html</loc>
-    <lastmod>2025-04-08T12:14:41.337Z</lastmod>
+    <loc>https://nikolay-apanasov.github.io/rlzero-doc/content/reference/reference.html</loc>
+    <lastmod>2025-04-08T22:28:46.663Z</lastmod>
   </url>
   <url>
-    <loc>https://nikolay-apanasov.github.io/rlzero-doc/start/start.html</loc>
-    <lastmod>2025-04-08T12:14:41.337Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nikolay-apanasov.github.io/rlzero-doc/start/design.html</loc>
-    <lastmod>2025-04-08T12:14:41.337Z</lastmod>
+    <loc>https://nikolay-apanasov.github.io/rlzero-doc/content/lab/lab.html</loc>
+    <lastmod>2025-04-08T23:27:33.068Z</lastmod>
   </url>
 </urlset>
