@@ -1,6 +1,7 @@
 *.swp
 
-./.quarto
-./_site/
+.quarto
+_site/
+.tmp/
 
 /.quarto/

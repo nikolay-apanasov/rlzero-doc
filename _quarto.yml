@@ -1,19 +1,123 @@
+# =============================================================================
+# Quarto Config for RLZero Documentation
+# =============================================================================
 project:
   type: website
-  output-dir: ./_site/
+  output-dir: './_site/'
+  #TODO render:
+
+# =============================================================================
+# Site Structure 
+# =============================================================================
 
 website:
   title: "RLZero"
+  page-navigation: true
+  back-to-top-navigation: true
+  reader-mode: true
+
+# Navigation
+# -----------------------------------------------------------------------------
   navbar:
+    background: "white"
+    search: true
+    title: false
     left:
-      - href: index.qmd
+      - file: index.qmd
         text: Home
+      - sidebar:intro
+      - sidebar:external 
+      - sidebar:reference 
+      - sidebar:lab
+    tools:
+      - icon: github
+        href: https://github.com/nikolay-apanasov/rlzero-doc
+  sidebar: 
+    - id: intro
+      title: "Introduction"
+      #collapse-level: 2
+      contents:
+        - content/intro/intro.qmd
+        - content/intro/design.qmd
+        - content/intro/install.qmd
+    - id: external 
+      title: "External Resources"
+      #collapse-level: 2
+      contents:
+        - content/external/resources.qmd
+    - id: reference
+      title: "API Reference"
+      #collapse-level: 2
+      contents:
+        - content/reference/reference.qmd
+    - id: lab
+      title: "Lab Assignments"
+      #collapse-level: 2
+      contents:
+        - content/lab/lab.qmd
+
+# Header/Footer 
+# -----------------------------------------------------------------------------
+  page-footer:
+    left: |
+      RLZero\  ~\  A Teaching Framework for Reinforcement Learning<br>
+      License {{< fa brands creative-commons >}}<br>
+      [Source code available on {{< fa brands github >}} `GitHub`](https://github.com/nikolay-apanasov/rlzero-doc)
+    right: |
+      Site Constructed With {{< fa brands python >}} and [`Quarto`](https://quarto.org/)<br>
+      Design Inspired by [Lino Galiana](https://pythonds.linogaliana.fr/en/)<br>
+
+  body-header: |
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  site-url: https://nikolay-apanasov.github.io/rlzero-doc/
+  repo-url: https://github.com/nikolay-apanasov/rlzero-doc
+  repo-branch: master
+
+# =============================================================================
+# Citation 
+# =============================================================================
+
+# TODO citation:
+#  title: "RLZero - A Teaching Framework for Distributed Reinforcement Learning"
+#  author: Nikolay Apanasov
+#  type: book
+#  doi: "10.5281/zenodo.8229676"
+#  url: https://rlzero.org/
+#  issued: 2025
+
+# =============================================================================
+# Page Options 
+# =============================================================================
 
 format:
   html:
     theme:
-      - cosmo
-      - brand
-    css: styles.css
+      light: [lightly, styles/custom.scss, styles/custom-light.scss]
+      dark: [darkly, styles/custom.scss, styles/custom-dark.scss]
+    css: styles/styles.css
     toc: true
+    code-overflow: wrap
+    # TODO include-in-header:
+    #  - build/toggle.js
+  ipynb: default
 
+#TODO filters:
+  # TODO - build/replace-title.lua
+  # - build/lang-notebook.lua
+  # - build/callout/callout-jupyter.lua
+  # - include-code-files
+
+crossref:
+  chapters: true
+
+date-format: iso
+page-layout: article
+title-block-banner: "#e9f3fa"
+number-sections: true
+wrap: preserve
+format-links: false
+validate-yaml: false
+keep-ipynb: true
+lightbox: auto
+google-scholar: true
