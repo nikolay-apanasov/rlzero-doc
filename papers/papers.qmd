@@ -1,4 +1,4 @@
-Prototyping Research Systems - Lab Assignments for 7.824
+Prototyping Research Systems - Lab Assignments
 ===============================================================================
 
 RLZero grew out of the lab-component for an imaginary graduate-level course _7.824 Deep Reinforcement Learning Systems_.
@@ -16,17 +16,20 @@ To this end, we present abstractions and implementation techniques for engineeri
 using the RLZero framework to illustrate these principles.
 
 RLZero is a library of building blocks for Reinforcement Learning, which enables prototyping RL research papers quickly and effectively.
-It is mostly based on the [Acme framework of DeepMind](), however it is not a library of RL algorithms.
-Similar to the [Spinning Up]() library by Josh Achiam at OpenAI, RLZero is an educational resource for Reinforcement Learning.
+It is mostly based on the [Acme framework of DeepMind](https://github.com/google-deepmind/acme), however it is not a library of RL algorithms.
+Similar to the [Spinning Up](https://spinningup.openai.com/)) library by Josh Achiam at OpenAI, RLZero is an educational resource for Reinforcement Learning.
 RLZero offers a small and lightweight set of thoughtfully chosen abstractions that makes it simple and intuitive for engineers 
 to create *modular* distributed RL systems consisting of components that are *flexible*, *reusable* and *fault-tolerant*.
 Students use the RLZero framework to implement a series of RL systems of increasing complexity,
-starting from [DQN/Rainbow]() and [Distributed DQN](), moving up to more recent distributed systems such as [D4PG](), [Impala](), [R2D2]() and finally [MuZero]().
+starting from [QR-DQN](https://arxiv.org/abs/1710.10044) and [Distributed (Gorila) DQN](https://arxiv.org/abs/1507.04296), 
+moving up to more recent distributed systems such as [D4PG](https://arxiv.org/abs/1804.08617), [R2D2](https://openreview.net/forum?id=r1lyTjAqYX), [Impala](https://arxiv.org/abs/1802.01561), and finally [MuZero](https://arxiv.org/pdf/1911.08265).
 The course culminates in a research project, where students
+
 + create a novel distributed RL algorithm
 + implement their system in RLZero
 + compare their algorithm's performance against suitable baselines
 + produce an 8-page report describing their work
+
 The project is an integral part of this class, and is designed to be similar to researching and writing a conference-style paper.
 
 -------------------------------------------------------------------------------
