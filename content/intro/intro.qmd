@@ -1,4 +1,4 @@
-Getting Started with RLZero
+Introduction to RLZero
 ===============================================================================
 
 <!--# An introduction to RLZero, followed by a tutorial example (QR-DQN, distributed QR-DQN (~Gorila)). -->

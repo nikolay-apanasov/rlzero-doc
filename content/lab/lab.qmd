@@ -1,4 +1,4 @@
-Prototyping Research Systems - Lab Assignments
+Lab Assignments - White Paper Implementations 
 ===============================================================================
 
 RLZero grew out of the lab-component for an imaginary graduate-level course _7.824 Deep Reinforcement Learning Systems_.
@@ -17,7 +17,7 @@ using the RLZero framework to illustrate these principles.
 
 RLZero is a library of building blocks for Reinforcement Learning, which enables prototyping RL research papers quickly and effectively.
 It is mostly based on the [Acme framework of DeepMind](https://github.com/google-deepmind/acme), however it is not a library of RL algorithms.
-Similar to the [Spinning Up](https://spinningup.openai.com/)) library by Josh Achiam at OpenAI, RLZero is an educational resource for Reinforcement Learning.
+Similar to the [Spinning Up](https://spinningup.openai.com/) library by Josh Achiam at OpenAI, RLZero is foremost an educational resource.
 RLZero offers a small and lightweight set of thoughtfully chosen abstractions that makes it simple and intuitive for engineers 
 to create *modular* distributed RL systems consisting of components that are *flexible*, *reusable* and *fault-tolerant*.
 Students use the RLZero framework to implement a series of RL systems of increasing complexity,
