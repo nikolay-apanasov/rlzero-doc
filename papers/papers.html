@@ -108,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#prototyping-research-systems---lab-assignments-for-7.824" id="toc-prototyping-research-systems---lab-assignments-for-7.824" class="nav-link active" data-scroll-target="#prototyping-research-systems---lab-assignments-for-7.824">Prototyping Research Systems - Lab Assignments for 7.824</a>
+  <li><a href="#prototyping-research-systems---lab-assignments" id="toc-prototyping-research-systems---lab-assignments" class="nav-link active" data-scroll-target="#prototyping-research-systems---lab-assignments">Prototyping Research Systems - Lab Assignments</a>
   <ul class="collapse">
   <li><a href="#solutions-reference-implementations" id="toc-solutions-reference-implementations" class="nav-link" data-scroll-target="#solutions-reference-implementations">Solutions (Reference Implementations)</a></li>
   </ul></li>
@@ -121,11 +121,18 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="prototyping-research-systems---lab-assignments-for-7.824" class="level1">
-<h1>Prototyping Research Systems - Lab Assignments for 7.824</h1>
+<section id="prototyping-research-systems---lab-assignments" class="level1">
+<h1>Prototyping Research Systems - Lab Assignments</h1>
 <p>RLZero grew out of the lab-component for an imaginary graduate-level course <em>7.824 Deep Reinforcement Learning Systems</em>. The purpose of this course is to help graduate students acquire a fundamental understanding of the theoretical foundations of Reinforcement Learning, and to help them get up to speed with the state-of-the-art in RL research. 7.824 provides the student with a strong foundation for both applying Reinforcement Learning to complex problems, and for addressing core research topics in Reinforcement Learning. After creating this content, it became obvious that RLZero and the 7.824 labs could be very useful resource for the community. Therefore we have made this library and the 7.824 labs public, in the hope that other researchers can benefit from our efforts.</p>
 <p>Much of the class consists of studying and discussing case studies of RL systems. The labs for 7.824 are a fundamental part of the curriculum, where students implement prototypes of state-of-the-art RL systems, as described in research publications. To this end, we present abstractions and implementation techniques for engineering distributed RL systems, using the RLZero framework to illustrate these principles.</p>
-<p>RLZero is a library of building blocks for Reinforcement Learning, which enables prototyping RL research papers quickly and effectively. It is mostly based on the <a href="">Acme framework of DeepMind</a>, however it is not a library of RL algorithms. Similar to the <a href="">Spinning Up</a> library by Josh Achiam at OpenAI, RLZero is an educational resource for Reinforcement Learning. RLZero offers a small and lightweight set of thoughtfully chosen abstractions that makes it simple and intuitive for engineers to create <em>modular</em> distributed RL systems consisting of components that are <em>flexible</em>, <em>reusable</em> and <em>fault-tolerant</em>. Students use the RLZero framework to implement a series of RL systems of increasing complexity, starting from <a href="">DQN/Rainbow</a> and <a href="">Distributed DQN</a>, moving up to more recent distributed systems such as <a href="">D4PG</a>, <a href="">Impala</a>, <a href="">R2D2</a> and finally <a href="">MuZero</a>. The course culminates in a research project, where students + create a novel distributed RL algorithm + implement their system in RLZero + compare their algorithm’s performance against suitable baselines + produce an 8-page report describing their work The project is an integral part of this class, and is designed to be similar to researching and writing a conference-style paper.</p>
+<p>RLZero is a library of building blocks for Reinforcement Learning, which enables prototyping RL research papers quickly and effectively. It is mostly based on the <a href="https://github.com/google-deepmind/acme">Acme framework of DeepMind</a>, however it is not a library of RL algorithms. Similar to the <a href="https://spinningup.openai.com/">Spinning Up</a>) library by Josh Achiam at OpenAI, RLZero is an educational resource for Reinforcement Learning. RLZero offers a small and lightweight set of thoughtfully chosen abstractions that makes it simple and intuitive for engineers to create <em>modular</em> distributed RL systems consisting of components that are <em>flexible</em>, <em>reusable</em> and <em>fault-tolerant</em>. Students use the RLZero framework to implement a series of RL systems of increasing complexity, starting from <a href="https://arxiv.org/abs/1710.10044">QR-DQN</a> and <a href="https://arxiv.org/abs/1507.04296">Distributed (Gorila) DQN</a>, moving up to more recent distributed systems such as <a href="https://arxiv.org/abs/1804.08617">D4PG</a>, <a href="https://openreview.net/forum?id=r1lyTjAqYX">R2D2</a>, <a href="https://arxiv.org/abs/1802.01561">Impala</a>, and finally <a href="https://arxiv.org/pdf/1911.08265">MuZero</a>. The course culminates in a research project, where students</p>
+<ul>
+<li>create a novel distributed RL algorithm</li>
+<li>implement their system in RLZero</li>
+<li>compare their algorithm’s performance against suitable baselines</li>
+<li>produce an 8-page report describing their work</li>
+</ul>
+<p>The project is an integral part of this class, and is designed to be similar to researching and writing a conference-style paper.</p>
 <table class="caption-top table">
 <tbody>
 <tr class="odd">
